@@ -1,3 +1,5 @@
+$primary: #19a2ae;
+
 * {
   padding: 0;
   margin: 0;
@@ -5,8 +7,39 @@
 }
 
 body {
-  background: #19a2ae;
-  background-image: url("/images/bg-pattern-bottom.svg");
-  background-position: right 100px bottom 50px;
-  background-repeat: no-repeat;
+  background: $primary;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .card {
+    background: white;
+    border-radius: 5%;
+
+    .personal-info {
+      text-align: center;
+
+      img {
+        border: 5px solid white;
+        border-radius: 50%;
+        margin-top: -3.5em;
+      }
+    }
+    .stats {
+      padding: 2.5em;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          list-style-type: none;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
