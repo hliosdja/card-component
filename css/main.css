@@ -8,7 +8,7 @@
 body {
   background: #19a2ae;
   background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
-  background-position: -100px -450px, right -100px bottom -500px;
+  background-position: left -10vh top -50vh, right -10vw bottom -50vh;
   background-attachment: fixed, fixed;
   background-repeat: no-repeat, no-repeat;
   font-family: "Kumbh Sans", sans-serif;
@@ -46,14 +46,21 @@ body {
   margin: -5em auto 1em auto;
 }
 
+.container .card .personal-info #name {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+}
+
 .container .card .personal-info p {
   color: #9e9e9e;
-  margin-top: 0.7em;
+  margin-top: 0.4em;
   font-size: 0.9em;
 }
 
 .container .card .personal-info span {
   color: #9e9e9e;
+  font-weight: 400;
   margin-left: 0.5em;
 }
 
@@ -78,6 +85,11 @@ body {
 .container .card .stats ul li {
   list-style-type: none;
   text-align: center;
+}
+
+.container .card .stats ul li p {
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .container .card .stats ul li small {
